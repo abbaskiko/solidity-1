@@ -4,7 +4,7 @@ FROM runtimeverificationinc/runtimeverification-iele-semantics:ubuntu-bionic-${K
 RUN    apt update        \
     && apt upgrade --yes \
     && apt install --yes \
-       build-essential   \
+       make              \
        g++-8             \
        curl              \
        tar               \
