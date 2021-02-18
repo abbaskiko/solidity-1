@@ -10,6 +10,7 @@ RUN    apt update        \
        tar               \
        libboost-all-dev  \
        llvm-10           \
+       llvm-10-dev       \
        libz3-dev         \
        libxml2-utils     \
        gcovr
