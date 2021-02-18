@@ -25,7 +25,7 @@ pipeline {
     stage('Compilation Tests') {
       steps { sh './test/ieleCmdlineTests.sh' }
     }
-    stage('Execution Tests'') {
+    stage('Execution Tests') {
       steps {
         sh '''
           kiele vm --port 9001 &
