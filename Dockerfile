@@ -5,9 +5,13 @@ RUN    apt update        \
     && apt upgrade --yes \
     && apt install --yes \
        build-essential   \
-       cmake             \
+       curl              \
+       tar               \
        libxml2-utils     \
        gcovr
+
+RUN curl -s "https://cmake.org/files/v3.16/cmake-3.16.3-Linux-x86_64.tar.gz" | \
+    tar --strip-components=1 -xz -C /usr/local
 
 ARG USER_ID=1000
 ARG GROUP_ID=1000
