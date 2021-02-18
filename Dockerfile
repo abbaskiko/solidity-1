@@ -7,6 +7,9 @@ RUN    apt update        \
        build-essential   \
        curl              \
        tar               \
+       libboost-all-dev  \
+       llvm-10           \
+       libz3-dev         \
        libxml2-utils     \
        gcovr
 
