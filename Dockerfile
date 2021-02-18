@@ -1,10 +1,12 @@
 ARG KIELE_COMMIT
 FROM runtimeverificationinc/runtimeverification-iele-semantics:ubuntu-bionic-${KIELE_COMMIT}
 
-RUN    apt update         \
-    && apt upgrade --yes  \
-    && apt install --yes  \
-       libxml2-utils      \
+RUN    apt update        \
+    && apt upgrade --yes \
+    && apt install --yes \
+       build-essential   \
+       cmake             \
+       libxml2-utils     \
        gcovr
 
 ARG USER_ID=1000
