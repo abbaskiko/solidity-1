@@ -5,6 +5,7 @@ RUN    apt update        \
     && apt upgrade --yes \
     && apt install --yes \
        build-essential   \
+       g++-8             \
        curl              \
        tar               \
        libboost-all-dev  \
