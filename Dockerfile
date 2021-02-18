@@ -1,5 +1,5 @@
 ARG KIELE_COMMIT
-FROM runtimeverificationinc/runtimeverification-iele-semantics:ubuntu-bionic-${KIELE_COMMIT}
+FROM runtimeverificationinc/runtimeverification-iele-semantics:ubuntu-focal-${KIELE_COMMIT}
 
 RUN    apt update        \
     && apt upgrade --yes \
