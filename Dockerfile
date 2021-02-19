@@ -5,6 +5,7 @@ RUN    apt update        \
     && apt upgrade --yes \
     && apt install --yes \
        build-essential   \
+       cmake             \
        libboost-all-dev  \
        llvm-10           \
        llvm-10-dev       \
