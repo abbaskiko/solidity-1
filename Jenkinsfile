@@ -16,8 +16,6 @@ pipeline {
         sh '''
           mkdir build
           cd build
-          export CC=gcc-8
-          export CXX=g++-8
           cmake .. -DCMAKE_BUILD_TYPE=Debug
           make -j`nproc`
           cd ..
