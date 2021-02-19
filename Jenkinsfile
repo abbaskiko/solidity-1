@@ -2,7 +2,7 @@ pipeline {
   agent {
     dockerfile {
       label 'docker'
-      additionalBuildArgs '--build-arg KIELE_COMMIT=$(cat kiele_release) --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g)'
+      additionalBuildArgs '--build-arg KIELE_COMMIT=$(cat ext/kiele_release) --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g)'
     }
   }
   options { ansiColor('xterm') }
