@@ -7,8 +7,8 @@ RUN    apt update        \
        build-essential   \
        cmake             \
        libboost-all-dev  \
-       llvm-10           \
-       llvm-10-dev       \
+       llvm-11           \
+       llvm-11-dev       \
        libz3-dev         \
        libxml2-utils     \
        gcovr
